@@ -194,23 +194,23 @@ function chooseSound() {
   secondLastChoice = lastChoice;
   lastChoice = choice;
 
-  if (choice === 0) { player = sound1; fileName = "+6dB"; }
-  else if (choice === 1) { player = sound2; fileName = "+12dB"; }
-  else if (choice === 2) { player = sound3; fileName = "+18dB"; }
-  else if (choice === 3) { player = sound4; fileName = "+24dB"; }
-  else if (choice === 4) { player = sound5; fileName = "+6dB"; }
-  else if (choice === 5) { player = sound6; fileName = "+12dB"; }
-  else if (choice === 6) { player = sound7; fileName = "+18dB"; }
-  else if (choice === 7) { player = sound7; fileName = "+24dB"; }
+  if (choice === 0) { player = sound1; fileName = "Digital +6dB"; }
+  else if (choice === 1) { player = sound2; fileName = "Digital +12dB"; }
+  else if (choice === 2) { player = sound3; fileName = "Digital +18dB"; }
+  else if (choice === 3) { player = sound4; fileName = "Digital +24dB"; }
+  else if (choice === 4) { player = sound5; fileName = "Digital +6dB"; }
+  else if (choice === 5) { player = sound6; fileName = "Digital +12dB"; }
+  else if (choice === 6) { player = sound7; fileName = "Digital +18dB"; }
+  else if (choice === 7) { player = sound7; fileName = "Digital +24dB"; }
 
-  else if (choice === 8) { player = sound3; fileName = "+6dB"; }
-  else if (choice === 9) { player = sound3; fileName = "+12dB"; }
-  else if (choice === 10) { player = sound4; fileName = "+18dB"; }
-  else if (choice === 11) { player = sound5; fileName = "+24dB"; }
-  else if (choice === 12) { player = sound6; fileName = "+6dB"; }
-  else if (choice === 13) { player = sound7; fileName = "+12dB"; }
-  else if (choice === 14) { player = sound7; fileName = "+18dB"; }
-  else if (choice === 15) { player = sound7; fileName = "+24dB"; }
+  else if (choice === 8) { player = sound3; fileName = "Analog +6dB"; }
+  else if (choice === 9) { player = sound3; fileName = "Analog +12dB"; }
+  else if (choice === 10) { player = sound4; fileName = "Analog +18dB"; }
+  else if (choice === 11) { player = sound5; fileName = "Analog +24dB"; }
+  else if (choice === 12) { player = sound6; fileName = "Analog +6dB"; }
+  else if (choice === 13) { player = sound7; fileName = "Analog +12dB"; }
+  else if (choice === 14) { player = sound7; fileName = "Analog +18dB"; }
+  else if (choice === 15) { player = sound7; fileName = "Analog +24dB"; }
 
   else if (choice === 16) { player = sound4; fileName = "4-bit"; }
   else if (choice === 17) { player = sound5; fileName = "5-bit"; }
@@ -219,10 +219,10 @@ function chooseSound() {
   else if (choice === 20) { player = sound7; fileName = "5-bit"; }
   else if (choice === 21) { player = sound7; fileName = "8-bit"; }
 
-  else if (choice === 22) { player = sound4; fileName = "32kbps"; }
-  else if (choice === 23) { player = sound5; fileName = "64kbps"; }
-  else if (choice === 24) { player = sound6; fileName = "96kbps"; }
-  else if (choice === 25) { player = sound7; fileName = "32kbps"; }
-  else if (choice === 26) { player = sound7; fileName = "64kbps"; }
+  else if (choice === 22) { player = sound4; fileName = "32kbps MP3"; }
+  else if (choice === 23) { player = sound5; fileName = "64kbps MP3"; }
+  else if (choice === 24) { player = sound6; fileName = "96kbps MP3"; }
+  else if (choice === 25) { player = sound7; fileName = "32kbps MP3"; }
+  else if (choice === 26) { player = sound7; fileName = "64kbps MP3"; }
   else { player = sound8; fileName = "96kbps"; }
 }
