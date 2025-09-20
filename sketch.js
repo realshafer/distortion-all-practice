@@ -1,4 +1,6 @@
-let sound1, sound2, sound3, sound4, sound5, sound6, sound7, sound8;
+let sound1, sound2, sound3, sound4, sound5, sound6, sound7, sound8, sound9, sound10;
+let sound11, sound12, sound13, sound14, sound15, sound16, sound17, sound18, sound19, sound20;
+let sound21, sound22, sound23, sound24, sound25, sound26, sound27, sound28;
 let original1, original2;
 let questionButton, original1Button, original2Button, answerButton, nextButton;
 let player, fileName;
