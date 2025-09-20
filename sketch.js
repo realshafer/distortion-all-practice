@@ -224,5 +224,5 @@ function chooseSound() {
   else if (choice === 24) { player = sound6; fileName = "96kbps MP3"; }
   else if (choice === 25) { player = sound7; fileName = "32kbps MP3"; }
   else if (choice === 26) { player = sound7; fileName = "64kbps MP3"; }
-  else { player = sound8; fileName = "96kbps"; }
+  else { player = sound8; fileName = "96kbps MP3"; }
 }
