@@ -14,6 +14,30 @@ function preload() {
   sound6 = loadSound('assets/Hoff_DigitalClip_12dB.mp3');
   sound7 = loadSound('assets/Hoff_DigitalClip_18dB.mp3');
   sound8 = loadSound('assets/Hoff_DigitalClip_24dB.mp3');
+
+  sound9 = loadSound('assets/Eno_TapeSat_6dB.mp3');
+  sound10 = loadSound('assets/Eno_TapeSat_12dB.mp3');
+  sound11 = loadSound('assets/Eno_TapeSat_18dB.mp3');
+  sound12 = loadSound('assets/Eno_TapeSat_24dB.mp3');
+  sound13 = loadSound('assets/Hoff_TapeSat_6dB.mp3');
+  sound14 = loadSound('assets/Hoff_TapeSat_12dB.mp3');
+  sound15 = loadSound('assets/Hoff_TapeSat_18dB.mp3');
+  sound16 = loadSound('assets/Hoff_TapeSat_24dB.mp3');
+
+  sound17 = loadSound('assets/Eno_BitDepth_4-bit.mp3');
+  sound18 = loadSound('assets/Eno_BitDepth_5-bit.mp3');
+  sound19 = loadSound('assets/Eno_BitDepth_8-bit.mp3');
+  sound20 = loadSound('assets/Hoff_BitDepth_4-bit.mp3');
+  sound21 = loadSound('assets/Hoff_BitDepth_5-bit.mp3');
+  sound22 = loadSound('assets/Hoff_BitDepth_8-bit.mp3');
+
+  sound23 = loadSound('assets/Eno_Lossy_32kbps.mp3');
+  sound24 = loadSound('assets/Eno_Lossy_64kbps.mp3');
+  sound25 = loadSound('assets/Eno_Lossy_96kbps.mp3');
+  sound26 = loadSound('assets/Hoff_Lossy_32kbps.mp3');
+  sound27 = loadSound('assets/Hoff_Lossy_64kbps.mp3');
+  sound28 = loadSound('assets/Hoff_Lossy_96kbps.mp3');
+  
   // Originals
   original1 = loadSound('assets/EnoOriginal.mp3');
   original2 = loadSound('assets/HoffOriginal.mp3');
@@ -27,11 +51,11 @@ function setup(){
 
   // Title
   textSize(48);
-  text("Digital Clipping Practice", width/2, height/9);
+  text("All Distortion Practice", width/2, height/9);
 
   // Subtitle
-  textSize(28);
-  text("+6dB, +12dB, +18dB, +24dB", width/2, height/9 + 40);
+  textSize(24);
+  text("Digital Clipping, Analog Saturation, Bit Reduction, Lossy Compression", width/2, height/9 + 40);
 
   // --- Layout variables ---
   let rowH = 60;
@@ -162,7 +186,7 @@ let secondLastChoice = -1;
 function chooseSound() {
   let choice;
   do {
-    choice = int(random(8));
+    choice = int(random(28));
   } while (choice === lastChoice && choice === secondLastChoice);
 
   secondLastChoice = lastChoice;
@@ -175,5 +199,28 @@ function chooseSound() {
   else if (choice === 4) { player = sound5; fileName = "+6dB"; }
   else if (choice === 5) { player = sound6; fileName = "+12dB"; }
   else if (choice === 6) { player = sound7; fileName = "+18dB"; }
-  else { player = sound8; fileName = "+24dB"; }
+  else if (choice === 7) { player = sound7; fileName = "+24dB"; }
+
+  else if (choice === 8) { player = sound3; fileName = "+6dB"; }
+  else if (choice === 9) { player = sound3; fileName = "+12dB"; }
+  else if (choice === 10) { player = sound4; fileName = "+18dB"; }
+  else if (choice === 11) { player = sound5; fileName = "+24dB"; }
+  else if (choice === 12) { player = sound6; fileName = "+6dB"; }
+  else if (choice === 13) { player = sound7; fileName = "+12dB"; }
+  else if (choice === 14) { player = sound7; fileName = "+18dB"; }
+  else if (choice === 15) { player = sound7; fileName = "+24dB"; }
+
+  else if (choice === 16) { player = sound4; fileName = "4-bit"; }
+  else if (choice === 17) { player = sound5; fileName = "5-bit"; }
+  else if (choice === 18) { player = sound6; fileName = "8-bit"; }
+  else if (choice === 19) { player = sound7; fileName = "4-bit"; }
+  else if (choice === 20) { player = sound7; fileName = "5-bit"; }
+  else if (choice === 21) { player = sound7; fileName = "8-bit"; }
+
+  else if (choice === 22) { player = sound4; fileName = "32kbps"; }
+  else if (choice === 23) { player = sound5; fileName = "64kbps"; }
+  else if (choice === 24) { player = sound6; fileName = "96kbps"; }
+  else if (choice === 25) { player = sound7; fileName = "32kbps"; }
+  else if (choice === 26) { player = sound7; fileName = "64kbps"; }
+  else { player = sound8; fileName = "96kbps"; }
 }
